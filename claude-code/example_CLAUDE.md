@@ -41,7 +41,7 @@
 ### Setup
 
 > Bootstrap / first-run commands after cloning the repo.
-> ```bash
+> ```bash   
 > # How to set up the project
 > ```
 

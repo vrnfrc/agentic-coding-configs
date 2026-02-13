@@ -10,16 +10,10 @@ Configs are organized by agentic coding provider.
 
 ### Claude Code configs (`claude-code/`)
 
-- `EXAMPLE_CLAUDE.md` — A skeleton CLAUDE.md template with standard sections (project overview, commands, architecture, conventions). Copy this into a target repo and fill in the project-specific details.
-- `claude_agents/settings.json` — Claude Code permission rules and plugin config. Maps to `.claude/settings.json` in the target repo.
-- `claude_agents/agents/` — Sub-agent definitions (Markdown with YAML frontmatter). Each file defines a specialized role:
-  - **Architect** — Architecture enforcement (official SwiftUI+ViewModel pattern vs legacy UIKit+Coordinator)
-  - **Navigator** — Navigation wiring (Router/Destination pattern for new screens, Coordinator for legacy)
-  - **Designer** — SwiftUI view decomposition and styling
-  - **Tester** — TDD workflow, test structure conventions, async testing with Dispatcher
-  - **Committer** — Git commit formatting (Conventional Commits) and branch naming
-  - **Teacher** — Concept explanation and Q&A
-- `claude_agents/rules/plan-mode.md` — Plan mode strategy: how to structure phased plans with sub-agent assignments, commit boundaries, and TDD flow selection (new feature / UI only / business logic only)
+- `example_CLAUDE.md` — A skeleton CLAUDE.md template with standard sections (project overview, commands, architecture, conventions). Copy this into a target repo and fill in the project-specific details.
+- `claude/settings.json.md` — Documents the Claude Code `settings.json` permission rules and plugin config.
+- `claude/agents/` — Sub-agent definitions (Markdown with YAML frontmatter). Each file defines a specialized role.
+- `claude/rules/plan-mode.md` — Plan mode strategy: how to structure phased plans with sub-agent assignments, commit boundaries, and TDD flow selection (new feature / UI only / business logic only)
 
 ### Agent file format
 
