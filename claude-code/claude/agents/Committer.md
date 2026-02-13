@@ -1,5 +1,5 @@
 ---
-name: Committer
+name: committer
 description: Commits changes with a clear, short commit message.
 model: haiku
 color: yellow

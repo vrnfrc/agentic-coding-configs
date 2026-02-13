@@ -48,13 +48,13 @@ Always reference the files the agent should read or modify. Vague instructions l
 **Good**:
 
 ```markdown
-* [Architect] Create ViewModel (`src/features/auth/LoginViewModel.ts`)
+* [architect] Create ViewModel (`src/features/auth/LoginViewModel.ts`)
 ```
 
 **Bad**:
 
 ```markdown
-* [Architect] Create the ViewModel
+* [architect] Create the ViewModel
 ```
 
 ### One responsibility per agent

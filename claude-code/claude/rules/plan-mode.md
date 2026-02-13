@@ -7,15 +7,14 @@ Plan mode guidelines.
 Treat each plan as a task ticket. Split the work into **analysis** (identify the code that needs changing) and **coding** (write the changes).
 
 Then split the coding into phases. Each phase contains a list of bullet points. Each bullet point specifies the sub-agent responsible:
-* Architect
-* Navigator
-* Tester
-* Designer
-* Committer
+* architect
+* tester
+* designer
+* committer
 
 Every phase ends with a commit:
 ```markdown
-* [Committer] Commit
+* [committer] Commit
 ```
 
 ### Bullet point format
@@ -25,10 +24,10 @@ Every bullet point must name the sub-agent in brackets, describe the action, and
 **Good**:
 
 ```markdown
-* [Architect] Create all involved files (`UserView.tsx`, `UserViewModel.ts`, `UserViewModel.test.ts`)
-* [Designer] Create View (`UserView.tsx`)
-* [Tester] Write happy-path unit tests for `UserViewModel` (`UserViewModel.test.ts`)
-* [Architect] Implement ViewModel and make tests pass (`UserViewModel.ts`)
+* [architect] Create all involved files (`UserView.tsx`, `UserViewModel.ts`, `UserViewModel.test.ts`)
+* [designer] Create View (`UserView.tsx`)
+* [tester] Write happy-path unit tests for `UserViewModel` (`UserViewModel.test.ts`)
+* [architect] Implement ViewModel and make tests pass (`UserViewModel.ts`)
 ```
 
 **Bad**:
@@ -101,30 +100,30 @@ Use when the task modifies controller / ViewModel logic, services, repositories,
 
 ## 1 — Scaffolding
 
-* [Architect] Create all files (`UserProfile.tsx`, `UserProfileViewModel.ts`, `UserProfileViewModel.test.ts`, `User.ts`)
-* [Committer] Commit
+* [architect] Create all files (`UserProfile.tsx`, `UserProfileViewModel.ts`, `UserProfileViewModel.test.ts`, `User.ts`)
+* [committer] Commit
 
 ## 2 — Happy path
 
-* [Tester] Write happy-path unit tests for `UserProfileViewModel` (`UserProfileViewModel.test.ts`)
-* [Architect] Implement ViewModel and make tests pass (`UserProfileViewModel.ts`)
-* [Committer] Commit
+* [tester] Write happy-path unit tests for `UserProfileViewModel` (`UserProfileViewModel.test.ts`)
+* [architect] Implement ViewModel and make tests pass (`UserProfileViewModel.ts`)
+* [committer] Commit
 
 ## 3 — Corner cases
 
-* [Tester] Write corner-case unit tests (`UserProfileViewModel.test.ts`)
-* [Architect] Implement corner-case logic and make tests pass (`UserProfileViewModel.ts`)
-* [Committer] Commit
+* [tester] Write corner-case unit tests (`UserProfileViewModel.test.ts`)
+* [architect] Implement corner-case logic and make tests pass (`UserProfileViewModel.ts`)
+* [committer] Commit
 
 ## 4 — UI
 
-* [Designer] Create View (`UserProfile.tsx`)
-* [Committer] Commit
+* [designer] Create View (`UserProfile.tsx`)
+* [committer] Commit
 
 ## 5 — Navigation
 
-* [Navigator] Wire `UserProfile` into the navigation (`routes.ts`)
-* [Committer] Commit
+* [architect] Wire `UserProfile` into the navigation (`routes.ts`)
+* [committer] Commit
 ```
 
 **Good** (business logic only):
@@ -138,13 +137,13 @@ Use when the task modifies controller / ViewModel logic, services, repositories,
 
 ## 1 — Failing tests
 
-* [Tester] Write failing tests that assert correct backoff delays (`NetworkService.test.ts`)
-* [Committer] Commit
+* [tester] Write failing tests that assert correct backoff delays (`NetworkService.test.ts`)
+* [committer] Commit
 
 ## 2 — Fix
 
-* [Architect] Fix retry logic and make tests pass (`NetworkService.ts`)
-* [Committer] Commit
+* [architect] Fix retry logic and make tests pass (`NetworkService.ts`)
+* [committer] Commit
 ```
 
 **Bad**:

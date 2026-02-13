@@ -1,5 +1,5 @@
 ---
-name: Tester
+name: tester
 description: Tests code, also with TDD methodology.
 model: opus
 color: red

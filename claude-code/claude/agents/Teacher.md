@@ -1,5 +1,5 @@
 ---
-name: Teacher
+name: teacher
 description: Explains concepts, code, architecture patterns, errors, or technology. Handles 'what is', 'how does', 'why', 'explain' questions.
 model: opus
 color: orange
