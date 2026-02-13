@@ -1,0 +1,20 @@
+{
+    "attribution": {
+        "commit": "",
+        "pr": ""
+    },
+    "permissions": {
+        "allow": [
+            "Bash(ls *)",
+            "Bash(git add *)",
+            "Bash(find *)"
+        ],
+        "deny": [
+            "Bash(rm *)",
+            "Bash(git * push *)"
+        ],
+        "ask": [
+            "Bash(git commit *)"
+        ]
+    }
+}
